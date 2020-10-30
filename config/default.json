@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://jamey:Password123@devcluster.ebepl.mongodb.net/<dbname>?retryWrites=true&w=majority",
-  "jwtSecret": "tokenSecret"
+  "jwtSecret": "tokenSecret",
+  "githubClientId": "3c9c65a336f55c56118f",
+  "githubSecret": "41d86b73c7e41be844104c9fe016cef0ea07b59d"
 }
