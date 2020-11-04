@@ -257,7 +257,7 @@ export const deleteAccount = () => async dispatch => {
     window.confirm('Are you sure? Your account cannot be retrieved if deleted!')
   ) {
     try {
-      const res = await axios.delete(`/api/profile`);
+      await axios.delete(`/api/profile`);
 
       dispatch({ type: CLEAR_PROFILE });
       dispatch({ type: ACCOUNT_DELETED });
