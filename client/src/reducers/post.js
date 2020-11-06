@@ -61,14 +61,14 @@ export default function (state = initialState, action) {
     case ADD_COMMENT:
       return {
         ...state,
-        post: { ...state, comments: payload },
+        post: { ...state.post, comments: payload },
         loading: false,
       };
     case REMOVE_COMMENT:
       return {
         ...state,
         post: {
-          ...state,
+          ...state.post,
           comments: state.post.comments.filter(
             comment => comment._id !== payload
           ),
